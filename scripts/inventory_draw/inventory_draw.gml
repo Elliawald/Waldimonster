@@ -1,7 +1,7 @@
 ///@arg x
 ///@arg y
 if(!o_game.paused_){
-exit;
+	exit;
 }
 var _x = argument0; 
 var _y = argument1;

@@ -37,6 +37,3 @@ global.item[1] = noone;
 
 inventory_create(6);
 inventory_add_item(o_ring_item);
-inventory_add_item(o_sword_item);
-inventory_add_item(o_bomb_item);
-inventory_add_item(o_ring_item);

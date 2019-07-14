@@ -33,6 +33,7 @@ enum dir {
 
 state_ = player.move;
 starting_state_ = player.move;
+found_item_sprite_ = noone;
 
 //lookup sprites
 sprite_[player.move, dir.right] = s_player_run_right;
@@ -59,3 +60,8 @@ sprite_[player.bomb, dir.right] = s_player_run_right;
 sprite_[player.bomb, dir.up] = s_player_run_up;
 sprite_[player.bomb, dir.left] = s_player_run_right;
 sprite_[player.bomb, dir.down] = s_player_run_down;
+
+sprite_[player.found_item, dir.right] = s_player_found_item;
+sprite_[player.found_item, dir.up] = s_player_found_item;
+sprite_[player.found_item, dir.left] = s_player_found_item;
+sprite_[player.found_item, dir.down] = s_player_found_item;
