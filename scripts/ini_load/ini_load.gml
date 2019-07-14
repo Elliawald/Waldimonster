@@ -13,6 +13,7 @@ global.player_max_health = ini_read_real("player","max_health", 1);
 global.player_stamina = ini_read_real("player","stamina", 1);
 global.player_max_stamina = ini_read_real("player","max_stamina", 1);
 
+global.inventory = ini_read_inventory("player","inventory",[]);
 
 ini_close();
 

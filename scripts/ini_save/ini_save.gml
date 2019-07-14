@@ -11,5 +11,6 @@ ini_write_real("player", "max_health", global.player_max_health);
 ini_write_real("player", "stamina", global.player_stamina);
 ini_write_real("player", "max_stamina", global.player_max_stamina);
 
+ini_write_inventory("player", "inventory", global.inventory);
 
 ini_close();
