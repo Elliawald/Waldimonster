@@ -8,6 +8,8 @@ speed_ = 2;
 direction_facing_ = dir.right; 
 roll_direction_ = dir.right;
 
+alarm[1] = global.one_second;
+
 direction_ = 0;
 
 
