@@ -11,7 +11,7 @@ roll_direction_ = dir.right;
 alarm[1] = global.one_second;
 
 direction_ = 0;
-
+action_ = noone;
 
 enum player {
 	 move,
@@ -29,6 +29,11 @@ enum dir {
 	 up,
 	 left,
 	 down
+}
+
+enum action{
+	one, 
+	two
 }
 
 state_ = player.move;
@@ -65,3 +70,8 @@ sprite_[player.found_item, dir.right] = s_player_found_item;
 sprite_[player.found_item, dir.up] = s_player_found_item;
 sprite_[player.found_item, dir.left] = s_player_found_item;
 sprite_[player.found_item, dir.down] = s_player_found_item;
+
+sprite_[player.bow, dir.right] = s_player_bow_right;
+sprite_[player.bow, dir.up] = s_player_bow_up;
+sprite_[player.bow, dir.left] = s_player_bow_right;
+sprite_[player.bow, dir.down] = s_player_bow_down;

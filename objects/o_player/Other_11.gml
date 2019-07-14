@@ -13,8 +13,7 @@ if(animation_hit_frame(1)){
 		case dir.up: _hitbox.y -= 4;
 			break;
 		default: _hitbox.y -= 8;
-			break;
-			
+			break;	
 	}
 }
 

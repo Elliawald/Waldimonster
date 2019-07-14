@@ -7,4 +7,7 @@ if hurtbox_entity_can_be_hurt_by(other) {
 	set_movement(_direction, other.knockback_);
 	state_ = player.hit;
 	audio_play_sound(a_hurt, 6, false);
+	if(other.destroy_on_contact_){
+		instance_destroy(other);
+	}
 }

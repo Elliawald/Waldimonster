@@ -1,8 +1,10 @@
 ///@arg input
 ///@arg item
+///@arg action
 
 var _input = argument0;
 var _item = argument1;
+var _action = argument2;
 
 if(_input){
 	var _target_x = x + lengthdir_x(8, direction_facing_*90);
@@ -13,9 +15,18 @@ if(_input){
 			event_user(interactable.activatable);
 		}
 	}else if(instance_exists(_item) && global.player_stamina >= _item.cost_){
+		if(_item.show_amount_){
+			if(_item.amount_ > 0){
+				_item.amount_ -= 1;
+			}else{
+				exit;
+			}
+		}
 		state_ = _item.action_;
+		action_ = _action;
 		global.player_stamina = max(0,global.player_stamina - _item.cost_);
 		alarm[1] = global.one_second;
 		image_index = 0;
+		
 	}
 }
