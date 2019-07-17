@@ -10,6 +10,8 @@ if(instance_exists(global.player_start_position)){
 		o_player.x = global.player_start_position.x;
 		o_player.y = global.player_start_position.y;
 		o_player.layer = layer_get_id("Instances");
+		o_camera.x = o_player.x;
+		o_camera.y = o_player.y;
 	}else{
 		var _start_x = global.player_start_position.x;
 		var _start_y = global.player_start_position.y;

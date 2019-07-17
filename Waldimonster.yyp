@@ -1007,6 +1007,14 @@
             }
         },
         {
+            "Key": "9ca8cf25-cb5a-47c0-a3d4-34523f71d520",
+            "Value": {
+                "id": "d0e2fcef-ce51-442a-8dec-bbd5a0ec051e",
+                "resourcePath": "sprites\\s_tongue_hitbox\\s_tongue_hitbox.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "9cf4799a-6c36-4fb6-9f27-9daaf7dc395a",
             "Value": {
                 "id": "6c608ddd-a10e-4ac4-90cc-271554d031c2",

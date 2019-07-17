@@ -1,3 +1,4 @@
+
 if !instance_exists(target_){
 	exit;
 }

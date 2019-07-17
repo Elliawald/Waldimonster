@@ -2,6 +2,8 @@ if !instance_exists(target_){
 	exit;
 }
 
+
+
 x = lerp(x, target_.x, 0.1);
 y = lerp(y, target_.y-8, 0.1);
 x = round_n(x, 1/scale_);
