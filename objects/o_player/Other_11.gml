@@ -1,5 +1,5 @@
 /// @description Sword State
-image_speed = 0.9;
+image_speed = 1.1;
 
 if(animation_hit_frame(1)){
 	var _angle = direction_facing_ * 90;
@@ -18,5 +18,6 @@ if(animation_hit_frame(1)){
 }
 
 if(animation_hit_frame(image_number -1)){
- state_ = player.move;
+	image_index = 0;
+	state_ = player.move;
 }

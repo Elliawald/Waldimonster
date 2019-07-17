@@ -13,7 +13,7 @@ if _x_input == 0 && _y_input = 0 {
 	apply_friction_to_movement_entity();
 }
 else{
-	image_speed = 0.6;
+	image_speed = 0.7;
 	if(_x_input != 0){
 		image_xscale = _x_input;
 	}
