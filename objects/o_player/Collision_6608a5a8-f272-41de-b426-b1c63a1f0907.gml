@@ -1,5 +1,11 @@
 /// @description Hit logic
-if hurtbox_entity_can_be_hurt_by(other) {
+if hurtbox_entity_can_be_hurt_by(other){
+		//screenshake off
+		//add_screenshake(8,8);
+}
+
+
+if hurtbox_entity_can_be_hurt_by(other) && invincible_ == false {
 	invincible_ = true;
 	alarm[0] = global.one_second * 1;
 	global.player_health -= other.damage_;

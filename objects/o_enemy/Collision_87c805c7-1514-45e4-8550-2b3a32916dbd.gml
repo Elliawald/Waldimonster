@@ -8,4 +8,9 @@ if hurtbox_entity_can_be_hurt_by(other) {
 	create_animation_effect(s_hit_effect, x, y-8, 1, true);
 	set_movement(_knockback_direction, other.knockback_);
 	audio_play_sound(a_hit, 7, false);
+	if(other.sprite_index == s_evolve_boom){
+		experience_worth_ = 0;
+	}
+
 }
+

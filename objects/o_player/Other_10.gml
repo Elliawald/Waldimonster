@@ -22,6 +22,12 @@ else{
 	roll_direction_ = direction_facing_ * 90;
 }
 
+//show_debug_message(experience_points_);
+if(experience_points_ >= experience_level_up_points){
+	evolution_ = 1;
+	state_ = player.evolve;
+}
+
 inventory_use_item(o_input.action_one_pressed_, global.item[0], action.one);
 inventory_use_item(o_input.action_two_pressed_, global.item[1], action.two);
 move_movement_entity(false);

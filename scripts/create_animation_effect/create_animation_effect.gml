@@ -15,8 +15,12 @@ var _effect = instance_create_layer(_x, _y, "Effects", o_animation_effect);
 _effect.sprite_index = _sprite;
 _effect.image_speed = _speed;
 
+
 if(_has_depth){
-	_effect.depth = -_y;
+	_effect.depth = -y;
+	if(_sprite == s_evolution_effect){
+		_effect.depth = -1000;
+	}
 }
 
 return _effect;

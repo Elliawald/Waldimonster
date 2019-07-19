@@ -8,3 +8,4 @@ if(global.player_health <= 0 && !invincible_){
 	room_goto(r_title);
 	game_restart();
 }
+

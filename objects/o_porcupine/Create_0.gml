@@ -10,6 +10,7 @@ enum porcupine{
 
 starting_state_ = porcupine.idle;
 state_ = starting_state_;
+experience_worth_ = 8;
 
 image_index = 0;
 image_xscale = choose(1, -1);

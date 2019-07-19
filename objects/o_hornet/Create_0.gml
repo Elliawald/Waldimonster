@@ -6,6 +6,7 @@ enum hornet {
 	attack
 }
 
+experience_worth_ = 20;
 starting_state_ = hornet.move;
 state_ = starting_state_;
 

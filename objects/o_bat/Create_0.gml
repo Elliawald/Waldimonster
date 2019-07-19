@@ -6,7 +6,7 @@ enum bat {
 	move,
 	attack
 }
-
+experience_worth_ = 10;
 starting_state_ = bat.move;
 state_ = starting_state_;
 alarm[1] = global.one_second*random_range(0, 1);
