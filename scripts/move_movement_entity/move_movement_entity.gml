@@ -12,8 +12,10 @@ var _y_speed = lengthdir_y(speed_, direction_);
 if speed_ <= 0 exit; // No need to check for collisions
 
 if place_meeting(x+_x_speed, y, collision_object_) {
-	while !place_meeting(x+sign(_x_speed), y, collision_object_) {
-		x += sign(_x_speed);
+	while !place_meeting(x+_x_speed, y, collision_object_) {
+	
+			x += sign(_x_speed);
+		
 	}
 	
 	if _bounce {
@@ -21,21 +23,18 @@ if place_meeting(x+_x_speed, y, collision_object_) {
 	} else {
 		_x_speed = 0;
 	}
-	
 }
 x += _x_speed;
 
 if place_meeting(x, y+_y_speed, collision_object_) {
-	while !place_meeting(x, y+sign(_y_speed), collision_object_) {
-		y += sign(_y_speed);
+	while !place_meeting(x, y+_y_speed, collision_object_) {
+			y += sign(_y_speed);
 	}
-	
 	if _bounce {
 		_y_speed = -(_y_speed)*bounce_amount_;
 	} else {
 		_y_speed = 0;
 	}
-	
 }
 y += _y_speed;
 

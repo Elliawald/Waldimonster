@@ -11,7 +11,7 @@
         "2f57f718-6132-49d7-92b0-fad512ab57ec"
     ],
     "filterType": "GMScript",
-    "folderName": "Moevement Scripts",
+    "folderName": "Movement Scripts",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

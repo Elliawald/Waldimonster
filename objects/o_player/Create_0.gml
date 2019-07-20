@@ -7,8 +7,8 @@ image_speed = 0;
 speed_ = 2;
 direction_facing_ = dir.right; 
 roll_direction_ = dir.right;
-evolution_ = 0;
-evolution_level_ = 0;
+evolution_ = 1;
+evolution_level_ = 1;
 experience_points_ = 0;
 experience_level_up_points = 3;
 cam_start_ = 1;
@@ -54,6 +54,6 @@ enum action{
 state_ = player.move;
 starting_state_ = player.move;
 found_item_sprite_ = noone;
-monster_ = monster_name.basic_blob;
+monster_ = monster_name.blob;
 
 get_sprites(monster_);
