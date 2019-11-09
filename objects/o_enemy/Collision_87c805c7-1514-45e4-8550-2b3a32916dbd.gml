@@ -11,6 +11,9 @@ if hurtbox_entity_can_be_hurt_by(other) {
 	if(other.sprite_index == s_evolve_boom){
 		experience_worth_ = 0;
 	}
+	if(other.destroy_on_contact_){
+		instance_destroy(other);
+	}
 
 }
 

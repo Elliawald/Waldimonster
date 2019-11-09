@@ -10,7 +10,7 @@ roll_direction_ = dir.right;
 evolution_ = 1;
 evolution_level_ = 1;
 experience_points_ = 0;
-experience_level_up_points = 3;
+experience_level_up_points = 30;
 cam_start_ = 1;
 
 alarm[1] = global.one_second;
@@ -35,7 +35,7 @@ enum monster_name {
 	 basic_blob,
 	 blob,
 	 dog,
-	 frog
+	 owl
 }
 
 //has to be this order
@@ -54,6 +54,6 @@ enum action{
 state_ = player.move;
 starting_state_ = player.move;
 found_item_sprite_ = noone;
-monster_ = monster_name.blob;
+monster_ = monster_name.owl;
 
 get_sprites(monster_);
