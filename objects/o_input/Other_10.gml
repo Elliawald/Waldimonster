@@ -17,3 +17,5 @@ action_one = keyboard_check(ord("X"));
 action_two_ = keyboard_check(ord("Y"));
 
 pause_pressed_ = keyboard_check_pressed(vk_enter);
+
+level_pressed_ = keyboard_check_pressed(vk_f1);

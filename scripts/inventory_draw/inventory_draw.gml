@@ -7,9 +7,24 @@ var _x = argument0;
 var _y = argument1;
 var _array_size = array_length_1d(global.inventory);
 
+var x_level = 0;
+var x_level2 = 0;
+
 for(var i=0;i<_array_size;i++){
 	var _box_x = _x+i*32;
-	var _box_y =_y;
+	var _box_y =_y;	
+	
+	if(i > 8){
+		_box_y =_y+32;
+		_box_x = _x+x_level*32;
+		x_level++;
+		if(i > 17){
+			_box_y =_y+64;
+			_box_x = _x+x_level2*32;
+			x_level2++;
+		}	
+	}
+	
 	draw_sprite(s_inventory_box,0,_box_x,_box_y)
 
 	var _item = global.inventory[i];
@@ -23,9 +38,9 @@ for(var i=0;i<_array_size;i++){
 	if(i == item_index_){
 		draw_sprite(s_pause_cursor, image_index/8, _box_x,_box_y);
 		if(instance_exists(_item)){
-			draw_text(_x+4,_y+36, _item.description_);
+			draw_text(60,148, _item.description_);
 			var _description_height = string_height(_item.description_);
-			draw_text(_x+4, _y+48+_description_height,"Stamina cost: "+string(_item.cost_));
+			draw_text(60, 138,"Stamina cost: "+string(_item.cost_));
 		}
 	}			
 }

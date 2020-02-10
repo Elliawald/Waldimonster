@@ -9,8 +9,8 @@ global.zoom = true;
 if(animation_hit_frame(image_number - 1)){	
 	global.zoom = false;	
 	var _inst_monster = instance_create_layer(x,y,"Instances",o_player_blob);
-	_inst_monster.experience_level_up_points = experience_level_up_points*experience_level_up_points;
-	_inst_monster.evolution_ = 0;
+	//_inst_monster.experience_level_up_points = experience_level_up_points*experience_level_up_points;
+	global.player_evolution_level++;
 	alarm[0] = global.one_second*4;
 	_inst_monster.invincible_ = true;
 	_inst_monster.alarm[0] = global.one_second*3;

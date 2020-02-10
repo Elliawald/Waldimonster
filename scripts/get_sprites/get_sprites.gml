@@ -19,16 +19,18 @@ sprite_[player.move, dir.up] = _run_up;
 sprite_[player.move, dir.left] = _run_right;
 sprite_[player.move, dir.down] = _run_down;
 
-sprite_[player.sword, dir.right] = _attack_right;
-sprite_[player.sword, dir.up] = _attack_up;
-sprite_[player.sword, dir.left] = _attack_right;
-sprite_[player.sword, dir.down] = _attack_down;
+sprite_[player.sword, dir.right] = _run_right;
+sprite_[player.sword, dir.up] = _run_up;
+sprite_[player.sword, dir.left] = _run_right;
+sprite_[player.sword, dir.down] = _run_down;
 
+
+/* no rolling planned
 sprite_[player.evade, dir.right] = s_player_2_roll_right;
 sprite_[player.evade, dir.up] = s_player_2_roll_up;
 sprite_[player.evade, dir.left] = s_player_2_roll_right;
 sprite_[player.evade, dir.down] = s_player_2_roll_down;
-
+*/
 sprite_[player.hit, dir.right] = _run_right;
 sprite_[player.hit, dir.up] = _run_up;
 sprite_[player.hit, dir.left] = _run_right;
@@ -39,15 +41,18 @@ sprite_[player.bomb, dir.up] = _run_up;
 sprite_[player.bomb, dir.left] = _run_right;
 sprite_[player.bomb, dir.down] = _run_down;
 
+
+/* no items pickup planned
 sprite_[player.found_item, dir.right] = s_player_2_found_item;
 sprite_[player.found_item, dir.up] = s_player_2_found_item;
 sprite_[player.found_item, dir.left] = s_player_2_found_item;
 sprite_[player.found_item, dir.down] = s_player_2_found_item;
+*/
 
-sprite_[player.projectile, dir.right] = _projectile_right;
-sprite_[player.projectile, dir.up] = _projectile_up;
-sprite_[player.projectile, dir.left] = _projectile_right;
-sprite_[player.projectile, dir.down] = _projectile_down;
+sprite_[player.projectile, dir.right] = _run_right;
+sprite_[player.projectile, dir.up] = _run_up;
+sprite_[player.projectile, dir.left] = _run_right;
+sprite_[player.projectile, dir.down] = _run_down;
 
 sprite_[player.evolve, dir.right] = s_evolution_effect;
 sprite_[player.evolve, dir.up] = s_evolution_effect;

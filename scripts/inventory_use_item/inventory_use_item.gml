@@ -23,6 +23,7 @@ if(_input){
 			}
 		}
 		state_ = _item.action_;
+		object_set_sprite(o_projectile, _item.sprite_index)
 		action_ = _action;
 		global.player_stamina = max(0,global.player_stamina - _item.cost_);
 		alarm[1] = global.one_second;

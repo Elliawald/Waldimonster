@@ -9,6 +9,16 @@ if(paused_){
 		audio_play_sound(a_menu_move, 1, false);
 	}
 	
+	if(o_input.down_pressed_){
+		item_index_ = min(item_index_ + 9, _array_size-1);
+		audio_play_sound(a_menu_move, 1, false);
+	}
+	
+	if(o_input.up_pressed_){
+		item_index_ = max(item_index_ - 9, 0);
+		audio_play_sound(a_menu_move, 1, false);
+	}
+	
 	if(o_input.action_one_pressed_){
 		global.item[0] = global.inventory[item_index_];
 		audio_play_sound(a_menu_select, 3, false);

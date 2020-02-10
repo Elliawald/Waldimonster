@@ -41,3 +41,4 @@ y += _y_speed;
 // Make sure to update speed and direction
 speed_ = point_distance(0, 0, _x_speed, _y_speed);
 direction_ = point_direction(0, 0, _x_speed, _y_speed);
+

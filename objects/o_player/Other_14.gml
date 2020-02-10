@@ -15,10 +15,10 @@ if(animation_hit_frame(3)){
 		image_speed = _projectile_speed;
 		audio_play_sound(a_swipe,2,false);
 		//create the arrow
-	var _arrow = instance_create_layer(x, y+8, "Instances", o_blubber);
+	var _arrow = instance_create_layer(x, y+8, "Instances", o_projectile);
 	_arrow.direction = direction_facing_ * 90;
 	_arrow.image_angle = direction_facing_ * 90;
-	_arrow.speed = 0.5;
+	_arrow.speed = 2;
 	
 		switch direction_facing_ {
 		case dir.right: _arrow.y -= 4; break;

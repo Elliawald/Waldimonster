@@ -15,8 +15,8 @@ if(animation_hit_frame(3)){
 		image_speed = _projectile_speed;
 		audio_play_sound(a_swipe,2,false);
 		//create the arrow
-	var _arrow = instance_create_layer(x, y, "Instances", o_plant_drill_1);
-	var _arrow2 = instance_create_layer(x, y, "Instances", o_plant_drill_2);
+	var _arrow = instance_create_layer(x, y, "Instances", o_projectile);
+	var _arrow2 = instance_create_layer(x, y, "Instances", o_projectile);
 	_arrow.direction = direction_facing_ * 90;
 	_arrow.image_angle = direction_facing_ * 90;
 	_arrow.speed = 4;
