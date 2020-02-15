@@ -16,10 +16,15 @@
         "90ddef42-fbe9-4353-a95e-5bae27802724",
         "3a700ba8-5716-4f57-a84f-0e6d71c1b92a",
         "8a844385-c0ca-411a-82c5-c9f2d2739d0d",
+        "aca68dee-3e11-4486-9c99-6d969026ec1b",
+        "98a9ba22-5815-4c7c-b802-2c5064ad4453",
         "4c992be0-1968-4602-b08d-6513904fdc58",
         "d6b45325-c66e-4900-8608-bf2e60700fb6",
         "714ce6f3-c4a9-4d20-a227-eb6ec8e17d16",
-        "3a641bbc-6fdc-4980-9838-cb0247d4e5db"
+        "3a641bbc-6fdc-4980-9838-cb0247d4e5db",
+        "d841d9f8-7d5e-45af-a22d-d8321297682f",
+        "159fe312-d87a-47eb-aa3c-92b9ef607654",
+        "4edaea0d-eb2f-4c17-9f89-1f4ed96b9d5a"
     ],
     "filterType": "GMSprite",
     "folderName": "World Sprites",
